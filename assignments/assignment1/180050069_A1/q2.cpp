@@ -85,7 +85,7 @@ char binarytohex_single(string bin){
 		pow *= 2;
 	}
 	if (dec > 9){
-		return char(dec - 10 + 'a');
+		return char(dec - 10 + 'A');
 	} else{
 		return char(dec + '0');
 	}
@@ -134,6 +134,7 @@ string floattobinary(float f){
 }
 
 int main(){
+	printf("Enter F or LI or SP or SI or Q\n");
 	while(true){
 		string input = "";
 		cin >> input;
@@ -141,13 +142,13 @@ int main(){
 		if (input == "F"){
 			float dec;
 			cin >> dec;
-			cout << binarytohex(floattobinary(dec)) << endl << endl;
+			cout << binarytohex(floattobinary(dec)) << endl;
 		} else if (input == "LI"){
-			cout << binarytohex(float_LI) << endl << endl;
+			cout << binarytohex(float_LI) << endl;
 		} else if (input == "SI"){
-			cout << binarytohex(float_SI) << endl << endl;
+			cout << binarytohex(float_SI) << endl;
 		} else if (input == "SP"){
-			cout << binarytohex(float_SP) << endl << endl;
+			cout << binarytohex(float_SP) << endl;
 		} else if (input == "Q"){
 			break;
 		} else{

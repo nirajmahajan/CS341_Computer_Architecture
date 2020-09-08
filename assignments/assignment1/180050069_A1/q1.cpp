@@ -81,7 +81,7 @@ char binarytohex_single(string bin){
 		pow *= 2;
 	}
 	if (dec > 9){
-		return char(dec - 10 + 'a');
+		return char(dec - 10 + 'A');
 	} else{
 		return char(dec + '0');
 	}
@@ -96,6 +96,7 @@ string binarytohex(string binary){
 }
 
 int main(){
+	printf("Enter I or LI or SI or Q\n");
 	while(true){
 		string input = "";
 		cin >> input;
@@ -103,11 +104,11 @@ int main(){
 		if (input == "I"){
 			int dec;
 			cin >> dec;
-			cout << binarytohex(decimalToBinary(dec)) << endl << endl;
+			cout << binarytohex(decimalToBinary(dec)) << endl;
 		} else if (input == "LI"){
-			cout << binarytohex(decimalToBinary(INT_MAX)) << endl << endl;
+			cout << binarytohex(decimalToBinary(INT_MAX)) << endl;
 		} else if (input == "SI"){
-			cout << binarytohex(decimalToBinary(INT_MIN)) << endl << endl;
+			cout << binarytohex(decimalToBinary(INT_MIN)) << endl;
 		} else if (input == "Q"){
 			break;
 		} else{
