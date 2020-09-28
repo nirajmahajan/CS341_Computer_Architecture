@@ -1,8 +1,6 @@
 # my usage of registers (mostly for my reference while coding)
 # t3,t4,t5,t6,t7 = temp register
-# s5,s6,s7 conditional registers
 # t0,t1,t2 = iterator registers
-# t4 = iterator register for k
 # s0 = n
 # s1 = input_hi
 # s2 = input_lo
