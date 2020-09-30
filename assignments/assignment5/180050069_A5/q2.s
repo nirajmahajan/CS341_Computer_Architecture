@@ -132,8 +132,8 @@ main:
 		lb $a0 ($a0)
 		addi $t3 $a0 -78
 		beqz $t3 while_end
-		jal print_newline
-		jal print_newline
+		# jal print_newline
+		# jal print_newline
 		j while_loop
 	while_end:
 
